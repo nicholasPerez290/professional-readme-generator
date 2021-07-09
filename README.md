@@ -1,28 +1,32 @@
-# ewfvrwfvfr
-  [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+# Readme Generator
+  [![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
   ## Description
   
-  frewf
+  Generate a readme from the terminal with your input
   
   ## Table of Contents
-   * wefff <br />* rgvrgvg <br />* rwvrvrv <br />
+   1 usage<br />2 licensing<br />3 contributing<br />4 tests<br />5 questions<br />
   
   ## Installation Instructions
-  wrfrfgrf
+  npm i
   
   ## Usage Info
-  rgvrgvrv
+  Just install and enjoy
   
   # License
-    This project is licensed by Apache
+    This project is licensed by BSD-3
 
   ## How to Contribute
-  rwfrwff
+  Email me to become part of the team!
   
   ## Test Guidelines
-  rwfrwf
+  none
   
   ## Questions
   * See my github at: [](undefined)
-  * Email me at: [](wrrff)
+  * Email me at: nicholas.perez290@gmail.com
+
+  ## Video Demo Link
+
+  [](https://drive.google.com/file/d/1XE1rSfJK8i3bzvEtxuUTYKawIpN1Wkuk/view)
   

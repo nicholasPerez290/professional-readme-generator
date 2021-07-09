@@ -62,7 +62,7 @@ function tableContents(tableOContents) {
   let newList = ' ';
   let i = 1
 arry.map(x => {
-  newList += `${i}${x}`
+  newList += `${i} ${x}<br />`
   i++
 }); return newList
 }
@@ -97,7 +97,7 @@ function generateMarkdown(data) {
   
   ## Questions
   * See my github at: [](${data.gitHub})
-  * Email me at: [](${data.email})
+  * Email me at: ${data.email}
   `);
 }
 

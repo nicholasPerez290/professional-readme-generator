@@ -3,9 +3,9 @@ const fs = require('fs');
 const inquirer = require('inquirer');
 const generateMarkdown = require('./generateMarkdown');
 // TODO: Create an array of questions for user input
-const questions = ['title of project:','Description:','Table of Contents:',
-'Installation Instructions:','Usage Info:',
-'License:','Contributor Info','Tests:','Github URL:','Email address:','Name of new file:'];
+const questions = ['title of project?','Description of Project?','Table of Contents, leave space for each item:',
+'What installation command should be used for this project?','What should the user know about using your project?',
+'Witch License should be used?','How can the user contribute? ','Tests the user should run?','Github URL:','Email address:'];
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
