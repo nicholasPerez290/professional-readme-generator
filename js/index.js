@@ -27,12 +27,6 @@ function init() {
         },
         {
             type: 'input',
-            message: questions[2],
-            name: 'tableOfContents',
-            loop: 'false'
-        },
-        {
-            type: 'input',
             message: questions[3],
             name: 'install'
         },

@@ -1,7 +1,29 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 const licenseInfo = require('./index.js')
 const inquirer = require("inquirer"); 
-
+function tableOfContents(data){
+   arryOfContents = []
+   if(data.install){
+    arryOfContents.push('Installation')
+   }
+   if(data.usage){
+     arryOfContents.push('Usage')
+   }
+   if(data.license){
+     arryOfContents.push('License')
+   }
+   if(data.contribute){
+    arryOfContents.push('Contribute')
+  }
+  if(data.test){
+    arryOfContents.push('Test')
+  }
+  let tOC
+  for(let i = 0; i < arryOfContents.length; i++){
+    tOC += `${i} ${arryOfContents[i]} <br />`
+  }
+  return tOC
+}
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
   if(license === 'Boost'){
@@ -57,18 +79,9 @@ function renderLicenseSection(license) {
     ${license}`
   }
 }
-function tableContents(tableOContents) {
-  let arry = tableOContents.split(' ')
-  let newList = ' ';
-  let i = 1
-arry.map(x => {
-  newList += `${i} ${x}<br />`
-  i++
-}); return newList
-}
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-  const tOC = tableContents(data.tableOfContents)
+  const tOC = tableOfContents(data)
   const licenseBadge = renderLicenseBadge(data.license);
   const licenseTxt = renderLicenseLink(data.license);
   const licenseSection = renderLicenseSection(licenseTxt);
@@ -96,7 +109,7 @@ function generateMarkdown(data) {
   ${data.test}
   
   ## Questions
-  * See my github at: [](${data.gitHub})
+  * See my github at: ${data.gitHub}
   * Email me at: ${data.email}
   `);
 }
